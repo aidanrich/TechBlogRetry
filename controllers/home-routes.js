@@ -1,5 +1,4 @@
 const router = require('express').Router();
-// const { Model } = require('sequelize/types');
 const { Blog, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
@@ -22,27 +21,6 @@ router.get('/', withAuth, async (req, res) => {
       }
 });
 
-// router.get('/', withAuth, async (req, res) => {
- 
-//     try {
-//         const comData = await Comment.findByPk(req.params.blog_c_id);
-//         console.log(comData);
-//         if (!comData) {
-//             res.status(404).json({ message: 'No Category card found with that id!' });
-//             return;
-//           }
-        
-//         const comAll = comData.map((comment) => comment.get({ plain: true }));
-//         console.log(comAll)
-//         res.render('homepage', {comAll,
-//             logged_in: req.session.logged_in,
-//         });
-    
-//     } catch (err) {
-//         console.log(err);
-//         res.status(500).json(err);
-//       }
-// });
 
 router.get('/blogsolo/:id', withAuth, async (req, res) => {
     console.log("get id?")

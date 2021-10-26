@@ -1,0 +1,42 @@
+<div class="col-md-6">
+<form class="form new-post-form">
+    <p>
+        <div class="form-group">
+      <h5>Title</h5>
+      <input id="blog-title" type="text" class="form-input"></input>
+      </div>
+    </p>
+    <p>
+        <div class="form-group">
+        <h5>Content</h5>
+        <input type="text" id="blog-content" class="form-input"></input>
+        </div>
+    </p>
+    <p>
+        <div class="form-group">
+        <button type="submit" value="Submit" class="btn btn-primary" id="subBtn">Submit</button>
+        </div>
+    </p>
+</form>
+<div>
+{{#each blogAll as |blog|}}
+<p> <h5><span class="blog-num">{{blog.id}}</span>.)  <a href="/blogpage/{{blog.id}}" class="blog-link">{{blog.name}}</a></h5> </p>
+
+   <p> {{blog.content}} </p>
+   <p> Author's UserID: {{blog.user_id}} </p>
+
+
+        <p>
+        <form class="form under-comment-form">
+            <div class="form-group">
+        <h5>leave a comment</h5>
+        <input type="text" class="blog-comment"></input>
+        <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+        </div>
+        </form>
+    </p>
+<button id="delete-post-button">Delete</button>
+{{/each}}
+</div>
+</div>   
+<p>

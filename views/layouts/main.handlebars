@@ -1,0 +1,35 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Aidan's Blog</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+     <header>
+    <h1><a href="/">The mini tech blog!</a></h1>
+    {{#if logged_in}}
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog">Your Posts</a>
+      <button class="btn" id="logout">logout</button>
+    </nav>
+    {{/if}}
+  </header>
+  <main>
+
+     {{{ body }}}
+</main>
+ <footer>
+      
+  </footer>
+
+      {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+  <script src="/js/newPost.js"></script>
+  <script src="/js/newCom.js"></script>
+  <script src="/js/soloPost.js"></script>
+      </body>
+
+</html>
