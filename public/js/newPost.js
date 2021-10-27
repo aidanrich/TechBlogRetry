@@ -1,5 +1,5 @@
 const newPost = document.querySelector('.new-post-form')
-console.log(newPost)
+
 const newFormHandler = async () => {
    
 
