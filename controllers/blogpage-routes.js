@@ -62,5 +62,20 @@ router.put('/update/:id', async (req, res) => {
 
 })
 
+router.post('/comment/:blog_c_id', withAuth, async (req, res) => {
+  console.log("hit")
+  try {
+      const newPost = await Comment.create({
+          ...req.body,
+          blog_c_id: req.params.id,
+      })
+      console.log(newPost)
+      res.json(newPost)
+  } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+  }
+});
+
 
 module.exports = router;
