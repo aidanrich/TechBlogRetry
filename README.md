@@ -13,7 +13,7 @@
 - You will need to use 'npm i' in a command line and then log into a mysql instance and run the schema if you are cloning the repo to your own machine.
 ## Usage
 - Here is the github repo: https://github.com/aidanrich/MiniBlog
-- Find a live version of the app on heroku: https://obscure-castle-99005.herokuapp.com/blog
+- Find a live version of the app on heroku: https://frozen-bastion-37712.herokuapp.com/login
 - Before you can start making your own posts you will need to make a login.
 - On the homescreen you will be bale to see everyone's posts. Click on 'Your Posts' to see only posts made with your login.
 - If you would rather not make your own login feel free to use: test@test.com, pass123
