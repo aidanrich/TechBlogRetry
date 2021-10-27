@@ -20,7 +20,7 @@
 </form>
 <div>
 {{#each blogAll as |blog|}}
-<p> <h5><span class="blog-num">{{blog.id}}</span>.)  <a href="/blogpage/{{blog.id}}" class="blog-link">{{blog.name}}</a></h5> </p>
+<p> <h5><span hidden class="blog-num">{{blog.id}}</span>  <a href="/blogpage/{{blog.id}}" class="blog-link">{{blog.name}}</a></h5> </p>
 
    <p> {{blog.content}} </p>
    <p> Author's UserID: {{blog.user_id}} </p>

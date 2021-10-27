@@ -10,6 +10,14 @@ header{
   margin:30px;
 }
 
+body h5 {
+  margin-left: 20px;
+}
+
+body p {
+  margin-left: 25px;
+}
+
 nav a {
   padding: 14px 20px;
 }

@@ -25,8 +25,7 @@ router.get('/:id', withAuth, async (req, res) => {
 });
 
 router.delete('/delete/:id', async (req, res) => {
-  console.log("!!!!!!!!!!!!!!!!!!!!!!!!!" + req.params.id)
-  // delete a category by its `id` value
+
   try {
 
     await Blog.destroy({
@@ -42,6 +41,26 @@ router.delete('/delete/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+router.put('/update/:id', async (req, res) => {
+  try {
+    const blogData = await Blog.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+
+    });
+    if (!blogData) {
+      res.status(404).json({ message: 'No blog with this id!' });
+      return;
+    }
+    res.status(200).json("Success");
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+
+})
 
 
 module.exports = router;

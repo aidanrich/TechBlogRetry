@@ -1,11 +1,12 @@
 
 <div hidden class="blog-num">{{blogOne.id}}</div>
-<p>{{blogOne.name}}</p>
+<p></p><textarea id="blog-title">{{blogOne.name}}</textarea></p>
 <p>
-    {{blogOne.content}}
+    <textarea id="blog-content">{{blogOne.content}}</textarea>
     
 </p>
-<button id="delete-post-button">Delete Post</button>
+<button id="update-post-button" class="btn btn-primary">Update Post</button>
+<button id="delete-post-button" class="btn btn-primary">Delete Post</button>
         <p>
         <form class="form under-comment-form">
             <div class="form-group">
@@ -17,4 +18,4 @@
     </p>
 
 
-     <script src="/js/postCRUD.js"></script>
+<script src="/js/postCRUD.js"></script>
