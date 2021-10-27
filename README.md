@@ -2,7 +2,7 @@
 - This is a redo on my tech-blog homework. The original repo is located here: https://github.com/aidanrich/MiniBlog
 ## Description
 - We were tasked with creating a full stack app that would function as a tech blog.
-- This blog is still in developement. Some features, like commenting on posts, deleting and updating posts are still being implemented.
+- This blog is still in developement. Some features, like commenting on posts, are still being implemented.
 - This project helped us learn about MVC, and how to make the back-end and front-end interact.
 ## Table of Contents
 - [Installation](#installation)
@@ -12,7 +12,7 @@
 ## Installation
 - You will need to use 'npm i' in a command line and then log into a mysql instance and run the schema if you are cloning the repo to your own machine.
 ## Usage
-- Here is the github repo: https://github.com/aidanrich/MiniBlog
+- Here is the github repo: https://github.com/aidanrich/TechBlogRetry
 - Find a live version of the app on heroku: https://frozen-bastion-37712.herokuapp.com/login
 - Before you can start making your own posts you will need to make a login.
 - On the homescreen you will be bale to see everyone's posts. Click on 'Your Posts' to see only posts made with your login.
